@@ -1,0 +1,4 @@
+#e93854 prymary color
+#fff9f9 bg color
+#4f0e19 text color 1
+#8e626a text color 2

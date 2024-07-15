@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Readex_Pro} from "next/font/google";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const readexPro = Readex_Pro({ subsets: ["arabic"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +17,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html 
+      lang="ar"
+      dir="rtl"
+    >
+      <body className={`${readexPro.className}  py-[50px] bg-primary_bg `}>
+        <Header/>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
