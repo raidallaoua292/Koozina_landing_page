@@ -20,8 +20,8 @@ type CardPropes ={
 
 const CoursesCard = ({img, title, lessons, hours, students,teacher}:CardPropes) => {
   return (
-    <div className='bg-white p-4 rounded-lg flex flex-col gap-2 drop-shadow-xl '>
-      <Image src='/couresCard1.jpeg' alt='Courses Card' width={300} height={250} className='rounded-lg w-full '/>
+    <div className='bg-white p-4 h-96 max-sm:max-w-xs rounded-lg flex flex-col justify-between gap-2 drop-shadow-xl '>
+      <Image src={img} alt='Courses Card' width={300} height={250} className='rounded-lg w-full h-48'/>
       <h3 className=' text-xl lg:text-2xl font-semibold '>{title}</h3>
       <div className='flex justify-between border-b-2 text-xs lg:text-sm pb-2 text-center'>
         <p className='flex gap-2 items-center'>

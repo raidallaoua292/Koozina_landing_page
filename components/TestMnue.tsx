@@ -3,6 +3,7 @@ import TestMnueCard from './_ui/TestMnueCard'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
 const TestMnue = () => {
+  
   return (
     <section className='mt-20 flex flex-col items-center gap-10 px-8 md:px-20 lg:px-30'>
       <h2 className='text-4xl text-center font-semibold text-text_pr'>ماذا يقول  <span className='text-primary '>طلابنا </span> <br />
