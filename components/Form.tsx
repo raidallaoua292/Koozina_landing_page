@@ -17,9 +17,9 @@ const Form = () => {
         <input className='p-4 pr-8 bg-transparent focus:outline-none text-text_pr placeholder:text-text-1 flex-1' placeholder="ادخل عنوان بريدك الالكتروني" type="email"  id="" 
         onChange={handelEmailChange} value={email}
         />
-          <button className='rounded-full bg-primary h px-5 py-3 h-full' type='submit'>اشتراك</button>
+          <button className='rounded-full bg-primary h px-5 py-3 h-full max-[470px]:mt-6 max-[470px]:border-2' type='submit'>اشتراك</button>
         </div>
-        <p className='text-center'>خصوصيتك تهمنا. نحرص على حماية معلوماتك <br />
+        <p className='text-center max-[470px]:mt-8'>خصوصيتك تهمنا. نحرص على حماية معلوماتك <br />
             لتجربة آمنة وسرية.    
         </p>
       </form>
