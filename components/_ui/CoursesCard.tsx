@@ -37,8 +37,10 @@ const CoursesCard = ({img, title, lessons, hours, students,teacher}:CardPropes) 
         {students} طالب
         </p>
       </div>
-      <div className='flex items-center gap-3'>
-        <div className='rounded-full h-10 w-10 border-2 border-primary'></div>
+      <div className='flex items-center gap-3 '>
+        <div className='rounded-full h-10 w-10 border-2 border-primary overflow-hidden '>
+          <Image src='/teacher_1.jpg' alt='Teacher' width={200} height={100} className='h-full '/>
+        </div>
         <p>
           {teacher} 
         </p>

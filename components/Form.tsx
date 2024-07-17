@@ -8,9 +8,17 @@ const Form = () => {
   const handelEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value)
   }
+
+  const handelSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setEmail('')
+  }
+
   return (
    <section className='mt-20 px-8 md:px-20 lg:px-30'>
-      <form className='bg-primary text-primary_bg px-6 sm:px-8 md:px-32 lg:px-40 py-10 rounded-3xl flex flex-col items-center gap-10 ' action="">
+      <form
+        onSubmit={handelSubmit}
+      className='bg-primary text-primary_bg px-6 sm:px-8 md:px-32 lg:px-40 py-10 rounded-3xl flex flex-col items-center gap-10 ' action="">
         <h2 className="text-4xl font-bold text-center" >انضم الى نشرتنا البريدية</h2>
         <h3 className='-mt-5 text-3xl'>للبقاء على اطلاع</h3>
         <div className='w-full bg-primary_bg h-20 rounded-full p-3 flex  items-center justify-between max-[470px]:flex-col'>

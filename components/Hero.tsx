@@ -19,11 +19,11 @@ const Hero = () => {
         <Button customStyles='text-xl !text-primary bg-primary_bg border-2 border-primary hover:text-white '> إكتشف</Button>
       </div>
     </div>
-    <div className='hidden md:block basis-1/2'>
+    <div className='hidden md:block  relative'>
       {/* <div className="absolute -translate-x-1/2 left-1/2 -translate-y-1/2 top-1/2 w-80 h-80 rounded-full bg-gradient-to-t from-primary to-primary_bg drop-shadow-3xl z-0 ">
       </div> */}
       
-      <Image src='/hero.png'  alt='hero' width={600} height={600}
+      <Image src='/hero.png'  alt='hero'  width={1000} height={1000}
         className='object-contain drop-shadow-3xl'/>
       
     </div>

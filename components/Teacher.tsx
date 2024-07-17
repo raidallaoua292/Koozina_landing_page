@@ -2,6 +2,26 @@ import React from 'react'
 import TeacherCard from './_ui/TeacherCard'
 import { FaAngleLeft, FaAngleRight } from 'react-icons/fa6'
 
+const teacherList = [
+  {
+    img: '/teacher_5.jpg',
+    name: 'ستيف ديلان',
+    title: 'سوشي مايسترو'
+  },
+  {
+    img: '/teacher_6.jpg',
+    name: 'جينيفر لوبيز',
+    title: 'مدربة الحلويات'
+  },
+  {
+    img: '/teacher_3.jpg',
+    name: 'محمد علي',
+    title: 'مدرب الطهي الصحي'
+  }
+
+]
+
+
 const Teacher = () => {
   return (
     <section id='teacher' className='flex flex-col items-center gap-10 mt-20 px-8 md:px-20 lg:px-30'>
@@ -12,9 +32,9 @@ const Teacher = () => {
         كل واحد منهم يقدم خبرته الفريدة.
       </p>
       <div className='grid grid-cols-3 gap-8 '>
-        <TeacherCard />
-        <TeacherCard />
-        <TeacherCard />
+        {teacherList.map((teacher, index) => (
+          <TeacherCard key={index} {...teacher} />
+        ))}
       </div>
       <div className='flex items-center gap-3 text-4xl max-md:hidden'>
           <FaAngleRight className='border  border-stone-500 text-stone-500 rounded-full p-2 w-12 h-12 cursor-pointer' />

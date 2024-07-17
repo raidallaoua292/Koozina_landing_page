@@ -6,7 +6,7 @@ import Btn from './_ui/Btn';
 
 const courseDetails = [
   {
-    img: '/couresCard1.jpeg',
+    img: '/couresCard_4.jpg',
     title: 'أسرار المطبخ المغربي :دورة ممتعة',
     lessons: 40,
     hours: 20,
@@ -14,7 +14,7 @@ const courseDetails = [
     teacher: ['محمد']
   },
   {
-    img: '/couresCard2.jpeg',
+    img: '/couresCard_5.jpg',
     title: 'السلطة: نكهات طازجة، أصناف لا نهاية لها',
     lessons: 30,
     hours: 12,
@@ -22,7 +22,7 @@ const courseDetails = [
     teacher: ['جميس كينغ']
   },
   {
-    img: '/couresCard3.jpeg',
+    img: '/couresCard_1.jpg',
     title: 'تذوق العالم عبر الطعام: النكهات العالمية',
     lessons: 15,
     hours: 20,
@@ -30,7 +30,7 @@ const courseDetails = [
     teacher: ['سارة مزياني']
   },
   {
-    img: '/couresCard1.jpeg',
+    img: '/couresCard_2.jpg',
     title: 'فن الحلويات: أشهى الوصفات',
     lessons: 25,
     hours: 18,
@@ -38,7 +38,7 @@ const courseDetails = [
     teacher: ['علي حسن']
   },
   {
-    img: '/couresCard2.jpeg',
+    img: '/couresCard_6.jpg',
     title: 'الطهي الصحي: نصائح ووصفات',
     lessons: 20,
     hours: 15,
