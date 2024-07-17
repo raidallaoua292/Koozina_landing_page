@@ -11,7 +11,7 @@ const courseDetails = [
     lessons: 40,
     hours: 20,
     students: 655,
-    teacher: ['محمد']
+    teacher: ['محمد','علي',]
   },
   {
     img: '/couresCard_5.jpg',
@@ -27,7 +27,7 @@ const courseDetails = [
     lessons: 15,
     hours: 20,
     students: 655,
-    teacher: ['سارة مزياني']
+    teacher: ['سارة مزياني','محمد علي','جينيفر لوبيز']
   },
   {
     img: '/couresCard_2.jpg',

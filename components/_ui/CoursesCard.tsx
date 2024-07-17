@@ -19,6 +19,15 @@ type CardPropes ={
 
 
 const CoursesCard = ({img, title, lessons, hours, students,teacher}:CardPropes) => {
+
+  const techers = () => {
+    if(teacher.length === 1){
+      return teacher[0]
+    } else if(teacher.length > 1){
+      return `عدة مدربين`
+  }
+}
+
   return (
     <div className='bg-white p-4 h-96 max-sm:max-w-xs rounded-lg flex flex-col justify-between gap-2 drop-shadow-xl '>
       <Image src={img} alt='Courses Card' width={300} height={250} className='rounded-lg w-full h-48'/>
@@ -37,13 +46,17 @@ const CoursesCard = ({img, title, lessons, hours, students,teacher}:CardPropes) 
         {students} طالب
         </p>
       </div>
-      <div className='flex items-center gap-3 '>
+      <div className={`flex items-center relative gap-3`}>
         <div className='rounded-full h-10 w-10 border-2 border-primary overflow-hidden '>
           <Image src='/teacher_1.jpg' alt='Teacher' width={200} height={100} className='h-full '/>
+          {teacher.length > 1 && <div className='bg-primary text-white text-xs lg:text-sm font-semibold p-1 absolute h-10 w-10 flex items-center justify-center -translate-y-1/2 top-1/2 right-5 border-2 z-50 rounded-full'>{teacher.length - 1}+</div>}
         </div>
-        <p>
-          {teacher} 
-        </p>
+        {
+          teacher.length > 1 ?
+          <p className='text-xs lg:text-sm font-semibold mr-4'>{techers()}</p>
+          :
+          <p className='text-xs lg:text-sm font-semibold'>{teacher[0]}</p>
+        }
       </div>
     </div>
   )
