@@ -4,9 +4,9 @@ import Image from 'next/image'
 const TestMnueCard = () => {
   return (
     <div className='rounded-xl  bg-white p-3 flex flex-col items-center gap-3 text-center drop-shadow-xl'>
-      <Image src='/teacher2.jpg' alt='Testmonial' width={100} height={100} className='rounded-full w-30 h-30 border -mt-16'/>
+      <Image src='/teacher_8.jpg' alt='Testmonial' width={100} height={100} className='rounded-full w-30 h-30 border -mt-16'/>
       <h4 className='font-bold text-xl text-text_pr'> 
-        خديجة م
+        احمد م
       </h4>
       <span className='text-text-1 text-sm -mt-2'>
         بركان ، المغرب

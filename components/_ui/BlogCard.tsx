@@ -16,7 +16,7 @@ const date = " ١٥ يونيو ٢٠٢١ "
 const BlogCard = () => {
   return (
     <div className='bg-white p-4 rounded-lg flex flex-col gap-4 drop-shadow-xl'>
-      <Image src='/couresCard1.jpeg' alt='Courses Card' width={300} height={250} className='rounded-lg w-full '/>
+      <Image src='/couresCard_7.jpg' alt='Courses Card' width={300} height={250} className='rounded-lg -full '/>
       <h3 className='text-2xl font-semibold text-text_pr'>{title} </h3>
       <p className='text-base text-stone-500 line-clamp-4'>{description}</p>
       <span className='text-primary'>{date}</span>
